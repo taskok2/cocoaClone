@@ -1,0 +1,121 @@
+.chats-body {
+    padding: 0;
+}
+.chats-body .header,
+.chats0body .status-bar{
+    padding : 0px 20px;
+}
+.chat-screen {
+    background-image: url("../images/white-waves.png");
+    min-height: 100vh;
+}
+.chat__write {
+    position: fixed;
+    bottom: 50px;
+    width: 80%;
+    background-color: #fcfcfc;
+    padding : 0px 20px;
+    border-radius: 40px;
+    box-shadow:0 13px 27px -5px rgba(50,50,93,.25)
+            , 0 8px 16px -8px rgba(0,0,0,.3)
+            , 0 -6px 16px -6px rgba(0,0,0,.025);
+    margin: 0 auto;
+    left : 0;
+    right : 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat__write i{
+    font-weight: 22px;
+}
+
+.chat__write-column:nth-child(2){
+    width: 80%;
+}
+
+.chat__write-column input{
+    width: 100%;
+    padding: 20px 10px;
+    border:none;
+    font-size: 14px;
+}
+
+.chat__write-column input:focus{
+    outline:none;
+}
+
+.chat-screen .chat__messages {
+    border-top: 1px solid #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 0px 20px;
+    padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp{
+    background-color: white;
+    font-size: 12px;
+    padding : 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow:0 13px 27px -5px rgba(50,50,93,.25)
+            , 0 8px 16px -8px rgba(0,0,0,.3)
+            , 0 -6px 16px -6px rgba(0,0,0,.025);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.message{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.message .message__bubble{
+    background-color: #fff;
+    font-weight: 600;
+    box-shadow:0 13px 27px -5px rgba(50,50,93,.25)
+    , 0 8px 16px -8px rgba(0,0,0,.3)
+    , 0 -6px 16px -6px rgba(0,0,0,.025);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color : #fff;
+    font-weight : 500;
+    display: block;
+}
+
+.incoming-message{
+    align-self: flex-start;
+}
+.incoming-message .message__bubble{
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right, #7474BF, #348AC7);
+}
+
+.sending-message{
+    text-align: right;
+    align-self: flex-end;
+}
+.sending-message .message__bubble{
+    border-bottom-right-radius: 0px;
+    background-image: linear-gradient(to left, #ED4264, #FFEDBC);
+}
+
+.incoming-message img{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+
+.incoming-message .message__author{
+    display: block;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+

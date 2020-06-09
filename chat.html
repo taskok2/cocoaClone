@@ -7,7 +7,7 @@
     <link href = "css/style.css" rel="stylesheet"/>
     <title>Chat | kakao Clone</title>
 </head>
-<body>
+<body class="chats-body">
     <div class="status-bar">
         <div class="status-bar__column">
             <span class="status-bar__clock">13:54</span>
@@ -36,26 +36,26 @@
             </span>
         </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
         <ul class="chat__messages">
             <span class="chat__timestamp">Friday, June 5, 2020</span>
-            <li class="incoming-message message">
+            <li class="sending-message message">
                 <span class="message_timestamp"></span>
                 <div class="message__content">
-                    <div class="message__buble">
-                        <mark>Hi</mark>
-                    </div>
+                    <span class="message__bubble">
+                        Hi. Please sent me some text as possible you can.
+                    </span>
                 </div>
             </li>
             <li class="incoming-message message">
                 <img class="message__avatar" src="images/a_profile.jpg"/>
                 <div class="message__content">
-                    <span class="message__author">a</span>
-                    <div class="message__buble">
+                    <span class="message__bubble">
                         Hello?
-                    </div>
+                    </span>
+                    <span class="message__author">a</span>
                 </div>
-                <span class="message_timestamp"></span>
+                <span class="message_timestamp">pm 11:30</span>
             </li>
         </ul>
     </main>
